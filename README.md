@@ -1,6 +1,4 @@
-Certainly! Here's the complete HTML code that incorporates all the instructions you've provided:
 
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -192,6 +190,5 @@ Certainly! Here's the complete HTML code that incorporates all the instructions 
     </footer>
 </body>
 </html>
-```
 
 # This code incorporates all the instructions you provided, including colors, sections, FormKeep integration, sub-pages, and the contact form. Save this code as `index.html` and upload it to your GitHub repository. Your website should now reflect all the requested features and design.
