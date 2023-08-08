@@ -6,7 +6,7 @@
     <title>My Blogging Website</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
             background-color: black;
@@ -76,8 +76,8 @@
             color: purple;
         }
         #write-blog {
-            background-color: black; /* Black background for the form */
-            color: white; /* White text color for the form */
+            background-color: black;
+            color: white;
             padding: 1em;
             border-radius: 5px;
             margin: 1em 0;
@@ -94,11 +94,16 @@
             border: 1px solid #ccc;
             border-radius: 4px;
         }
+        .stylish-font {
+            font-family: 'Pacifico', cursive;
+            font-size: 24px;
+        }
     </style>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap">
 </head>
 <body>
     <header>
-        <h1>Welcome to My Blogging Website</h1>
+        <h1 class="stylish-font">Welcome to My Blogging Website</h1>
     </header>
     
     <nav>
@@ -138,7 +143,7 @@
             <!-- Blog Submission Form -->
             <div id="write-blog">
                 <h3>Write a Blog</h3>
-                <form action="submit_blog.php" method="POST">
+                <form action="YOUR_FORMSPREE_ENDPOINT" method="POST">
                     <label for="title">Title:</label>
                     <input type="text" id="title" name="title" required><br>
                     <label for="content">Content:</label>
