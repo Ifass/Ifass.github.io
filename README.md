@@ -9,7 +9,8 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f5f5f5;
+            background-color: black;
+            color: blue;
         }
         header {
             background-color: #333;
@@ -23,6 +24,7 @@
             display: flex;
             justify-content: center;
             background-color: #444;
+            border-top: 4px solid #4CAF50;
         }
         nav li {
             margin: 0 10px;
@@ -64,9 +66,33 @@
             border-radius: 25px;
             cursor: pointer;
             font-size: 16px;
+            transition: background-color 0.3s, transform 0.2s;
         }
         .btn:hover {
             background-color: #45a049;
+            transform: scale(1.05);
+        }
+        h2 {
+            color: purple;
+        }
+        #write-blog {
+            background-color: black; /* Black background for the form */
+            color: white; /* White text color for the form */
+            padding: 1em;
+            border-radius: 5px;
+            margin: 1em 0;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input[type="text"],
+        textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
         }
     </style>
 </head>
@@ -77,29 +103,21 @@
     
     <nav>
         <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#blog">Blog</a></li>
-            <li><a href="#upload">Upload</a></li>
-            <li><a href="#newpage">New Page</a></li>
+            <li><a href="#about" class="btn">About</a></li>
+            <li><a href="#portfolio" class="btn">Portfolio</a></li>
+            <li><a href="#blog" class="btn">Blog</a></li>
+            <li><a href="#upload" class="btn">Upload</a></li>
+            <li><a href="#newpage" class="btn">New Page</a></li>
         </ul>
     </nav>
     
     <main>
         <section id="about">
-            <h2>About Me</h2>
-            <p>Hello there! I'm a passionate student currently pursuing my studies in college, where I'm constantly fueled by my curiosity and enthusiasm for learning. My name is [Your Name], and I'm not your typical college student. I'm not only dedicated to my academic journey but also thrive as a ChatGPT expert and online marketing enthusiast.</p>
-            
-            <p>With a keen interest in technology and a deep understanding of the capabilities of AI, I've honed my skills as a ChatGPT expert, engaging in thought-provoking conversations and assisting others in finding creative solutions to their questions.</p>
-            
-            <p>But that's not all—I've also delved into the world of online marketing, where I've harnessed my strategic thinking and innovative mindset to help businesses thrive in the digital landscape. My ability to weave creativity into every aspect of my work sets me apart, allowing me to come up with fresh and exciting ideas that make an impact.</p>
-            
-            <p>Join me on my journey as I balance the rigors of academia, my passion for AI and technology, and my boundless imagination that fuels my creative ideas. Together, we'll explore new horizons and make the most of every opportunity that comes our way.</p>
+            <!-- ... (about section content) ... -->
         </section>
         
         <section id="portfolio">
-            <h2>Portfolio</h2>
-            <p>Showcase your projects, skills, or achievements.</p>
+            <!-- ... (portfolio section content) ... -->
         </section>
         
         <section id="blog">
@@ -116,6 +134,18 @@
             </article>
             
             <!-- Add more articles for additional blog posts -->
+            
+            <!-- Blog Submission Form -->
+            <div id="write-blog">
+                <h3>Write a Blog</h3>
+                <form action="submit_blog.php" method="POST">
+                    <label for="title">Title:</label>
+                    <input type="text" id="title" name="title" required><br>
+                    <label for="content">Content:</label>
+                    <textarea id="content" name="content" rows="4" required></textarea><br>
+                    <button type="submit" class="btn">Submit</button>
+                </form>
+            </div>
         </section>
         
         <section id="upload">
@@ -129,4 +159,11 @@
         <section id="newpage">
             <h2>New Page</h2>
             <p>This is a new page that opens when you click the "New Page" button in the navigation.</p>
-        </
+        </section>
+    </main>
+    
+    <footer>
+        <!-- ... (footer content) ... -->
+    </footer>
+</body>
+</html>
