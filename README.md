@@ -143,7 +143,7 @@
             <!-- Blog Submission Form -->
             <div id="write-blog">
                 <h3>Write a Blog</h3>
-                <form action="YOUR_FORMSPREE_ENDPOINT" method="POST">
+                <form action="https://formkeep.com/p/16b60ff06822fde8809a2679a7b32a2e" method="POST">
                     <label for="title">Title:</label>
                     <input type="text" id="title" name="title" required><br>
                     <label for="content">Content:</label>
@@ -154,16 +154,11 @@
         </section>
         
         <section id="upload">
-            <h2>Upload Your File</h2>
-            <form action="https://formkeep.com/p/16b60ff06822fde8809a2679a7b32a2e" method="POST" enctype="multipart/form-data">
-                <input type="file" name="file">
-                <button type="submit" class="btn">Upload File</button>
-            </form>
+            <!-- ... (upload section content) ... -->
         </section>
         
         <section id="newpage">
-            <h2>New Page</h2>
-            <p>This is a new page that opens when you click the "New Page" button in the navigation.</p>
+            <!-- ... (new page section content) ... -->
         </section>
     </main>
     
